@@ -1,0 +1,6 @@
+en:
+  helpers:
+    full_date:
+      just_now: "%{date} (Just now)"
+      past: "%{date} (%{time} ago)"
+      future: "%{date} (%{time} from now)"

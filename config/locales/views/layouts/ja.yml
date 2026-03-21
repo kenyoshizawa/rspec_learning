@@ -1,0 +1,5 @@
+ja:
+  layouts:
+    navbar:
+      confirmations:
+        sign_out: "本当にログアウトしますか？"

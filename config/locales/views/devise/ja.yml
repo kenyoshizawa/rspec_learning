@@ -1,0 +1,36 @@
+ja:
+  devise:
+    shared:      
+      links:
+        sign_in: "ログイン"
+        sign_up: "新規登録"
+        forgot_password: "パスワードを忘れましたか？"
+      minimum_password_length:
+        other: "%{count}文字以上に設定してください"
+    registrations:
+      new:
+        title: "Sign up"
+        heading: "Sign up"
+        tagline: "新しいアカウントを作成"
+        submit: "アカウント作成"
+        already_have_account: "既にアカウントをお持ちの方"
+        terms_agreement: "アカウントを作成することで、利用規約とプライバシーポリシーに同意したことになります"
+      edit:
+        title: "Edit Account"
+        heading: "Edit Account"
+        tagline: "アカウントを編集"
+        currently_waiting_confirmation_for_email: "%{email} の確認待ちです"
+        new_password: "新しいパスワード"
+        new_password_confirmation: "新しいパスワード（確認用）"
+        submit: "アカウント更新"
+        destroy_warning: "アカウントを削除すると、以下のデータがすべて失われます。"
+        destroy_user_info: "ユーザー情報"
+        destroy_projects: "プロジェクトデータ"
+    sessions:
+      new:
+        title: "Log in"
+        heading: "Log in"
+        tagline: "アカウントにログイン"
+        submit: "ログイン"
+        no_account: "アカウントをお持ちでない方"
+        terms_agreement: "アカウントを作成することで、利用規約とプライバシーポリシーに同意したことになります"

@@ -1,0 +1,9 @@
+ja:
+  helpers:
+    full_date:
+      just_now: "%{date} (たった今)"
+      past: "%{date} (%{time}前)"
+      future: "%{date} (%{time}後)"
+    submit:
+      create: "作成"
+      update: "更新"

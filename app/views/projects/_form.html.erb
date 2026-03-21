@@ -1,0 +1,46 @@
+<%= form_with(model: project, html: { class: "space-y-6" }) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <div>
+    <%= f.label :name, class: "block text-sm font-medium text-gray-700 after:content-['*'] after:text-red-600 after:ml-0.5 mb-2" %>
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+          <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <%= f.text_field :name, 
+            class: "block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200" %>
+    </div>
+  </div>
+
+  <div>
+    <%= f.label :description, class: "block text-sm font-medium text-gray-700 mb-2" %>
+    <%= f.text_area :description, 
+          rows: 4,
+          class: "block w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200" %>
+  </div>
+
+  <div>
+    <%= f.label :due_on, class: "block text-sm font-medium text-gray-700 mb-2" %>
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <%= f.date_field :due_on, 
+            class: "block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200" %>
+    </div>
+  </div>
+
+  <div class="flex space-x-4 pt-4">
+    <%= f.submit class: "flex-1 flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:outline-none transform transition-all duration-200 shadow-lg hover:shadow-xl" %>
+    
+    <% cancel_path = (project.persisted? ? project_path(project) : projects_path) %>
+    <%= link_to t("projects.shared.links.cancel"), cancel_path, 
+          data: { turbo_method: :get, turbo_confirm: t("projects.shared.confirm.are_you_sure") },
+          class: "flex-1 flex justify-center py-3 px-4 border-2 border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 hover:border-gray-400 focus:outline-none transform transition-all duration-200 shadow-md hover:shadow-lg" %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+ja:
+  projects:
+    shared:
+      links:
+        cancel: "キャンセル"
+      confirm:
+        are_you_sure: 本当によろしいですか？
+    index:
+      title: "Projects"
+      heading: "Projects"
+      new_project: "New Project"
+      no_projects: "No Projects"
+      no_projects_description: "No Project Description"
+    new:
+      title: "New project"
+      heading: "New project"
+      tagline: "新しいプロジェクトを作成"
+    edit:
+      title: "Editing project"
+      heading: "Editing project"
+      tagline: "プロジェクトを更新"
+      show_this_project: "このプロジェクトの詳細"
+      back_to_projects: "プロジェクト一覧"
+    project:
+      edit_this_project: "編集"
+      delete_this_project: "削除"
+      status:
+        completed: "完了"
+        complete: "未完了"
+      confirm:
+        are_you_sure: "このプロジェクトを削除してもよろしいですか？"

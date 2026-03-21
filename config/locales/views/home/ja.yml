@@ -1,0 +1,8 @@
+ja:
+  home:
+    top:
+      title: "Home"
+      greeting_prefix: "Welcome to"
+      app_short_name: "Projects"
+      tagline: "プロジェクト管理を始めましょう"
+      cta_description: "新しいアカウントを作成して、プロジェクトの管理を開始してください"

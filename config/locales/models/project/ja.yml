@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      project: "プロジェクト"
+    attributes:
+      project:
+        owner: "作成者"
+        name: "プロジェクト名"
+        description: "説明"
+        due_on: "期限"

@@ -1,0 +1,15 @@
+ja:
+  errors:
+    access_denied:
+      project: "そのプロジェクトへのアクセス権がありません。"
+  projects:
+    create:
+      success: "プロジェクトの作成に成功しました"
+    update:
+      success: "プロジェクトの更新に成功しました"
+    destroy:
+      success: "プロジェクトの削除に成功しました"
+      fail: "プロジェクトの削除に失敗しました"
+    complete:
+      success: "プロジェクトを完了しました！"
+      fail: "プロジェクトを完了できませんでした"      
