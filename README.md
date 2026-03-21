@@ -1,4 +1,4 @@
-#『Everyday Rails - RSpecによるRailsテスト入門』の学習用リポジトリ
+# 『Everyday Rails - RSpecによるRailsテスト入門』の学習用リポジトリ
 現在は学習中のため、コードのリファクタリングや修正を随時行っていきます。
 
 
