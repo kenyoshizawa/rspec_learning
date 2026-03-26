@@ -10,7 +10,7 @@
 - Rails (7.2.2.1)
 - sprockets (4.2.2)
 - importmap-rails (2.2.2)
-- tailwindcss-rails (4.4.0)
+- tailwindcss-rails (3.3.2)
 - puma (7.1.0)
 - sqlite3 (2.8.0)
 - rspec-rails (7.1.1)
